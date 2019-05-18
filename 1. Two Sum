@@ -1,0 +1,14 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> ans; 
+        for (int n=0, i=nums.size(); n<i; n++ ){
+            for (int p=n+1; p<nums.size(); p++){
+                if(target == nums[n]+nums[p]){
+                    ans = {n,p};
+                }
+            }
+        }
+    return ans;
+    }
+};
